@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Installation - imbue</title>
+        <title>Brief Flow - imbue</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">ImbueNetwork</a></li><li class="chapter-item expanded "><a href="ch00-00-how-to-use.html"><strong aria-hidden="true">1.</strong> How to use this guide</a></li><li class="chapter-item expanded "><a href="ch01-00-00-components.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-00-frontend-intro.html"><strong aria-hidden="true">2.1.</strong> Frontend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-00-app-technical.html"><strong aria-hidden="true">2.1.1.</strong> Technical</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html" class="active"><strong aria-hidden="true">2.1.1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-running-app.html"><strong aria-hidden="true">2.1.1.2.</strong> Running your app locally</a></li><li class="chapter-item expanded "><a href="ch01-03-login-flow.html"><strong aria-hidden="true">2.1.1.3.</strong> Login Flow</a></li><li class="chapter-item expanded "><a href="ch01-04-brief-flow.html"><strong aria-hidden="true">2.1.1.4.</strong> Brief Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch01-00-app-non-technical.html"><strong aria-hidden="true">2.1.2.</strong> Non-Technical</a></li></ol></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="ch00-00-introduction.html">ImbueNetwork</a></li><li class="chapter-item expanded "><a href="ch00-00-how-to-use.html"><strong aria-hidden="true">1.</strong> How to use this guide</a></li><li class="chapter-item expanded "><a href="ch01-00-00-components.html"><strong aria-hidden="true">2.</strong> Components</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-00-frontend-intro.html"><strong aria-hidden="true">2.1.</strong> Frontend</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-00-app-technical.html"><strong aria-hidden="true">2.1.1.</strong> Technical</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ch01-01-installation.html"><strong aria-hidden="true">2.1.1.1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="ch01-02-running-app.html"><strong aria-hidden="true">2.1.1.2.</strong> Running your app locally</a></li><li class="chapter-item expanded "><a href="ch01-03-login-flow.html"><strong aria-hidden="true">2.1.1.3.</strong> Login Flow</a></li><li class="chapter-item expanded "><a href="ch01-04-brief-flow.html" class="active"><strong aria-hidden="true">2.1.1.4.</strong> Brief Flow</a></li></ol></li><li class="chapter-item expanded "><a href="ch01-00-app-non-technical.html"><strong aria-hidden="true">2.1.2.</strong> Non-Technical</a></li></ol></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -144,41 +144,37 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="installation"><a class="header" href="#installation">Installation</a></h2>
-<h3 id="local-deployment-quickstart-with-docker-compose"><a class="header" href="#local-deployment-quickstart-with-docker-compose">Local deployment quickstart with docker-compose</a></h3>
-<p>We make sure that the app is easy to deploy locally. To do so, we have created a docker-compose file that will allow you to deploy the app locally with a single command. 
-follow these steps:</p>
-<ol>
-<li>Make sure you have docker and docker-compose installed on your computer.</li>
-<li>Clone the app's repository from GitHub: <code>git clone https://github.com/ImbueNetwork/imbue-frontend.git</code>.</li>
-<li>Navigate to the app's directory: <code>cd imbue-frontend</code>.</li>
-<li>Run the docker-compose command: <code>docker-compose up -d</code>.</li>
-<li>We are using make file for quick setup of db and migrations. </li>
-<li>Run the make command: <code>make db_up</code> and <code>make seed</code> . It will create the database and run the migrations to populate the table with some dummy data.</li>
-<li>Install the app's dependencies: <code>yarn </code>.</li>
-</ol>
-<h3 id="configuration"><a class="header" href="#configuration">Configuration</a></h3>
-<p>The app's configuration is stored in environment variables. The following variables are available:</p>
+                        <h2 id="brief-flow"><a class="header" href="#brief-flow">Brief Flow</a></h2>
+<h4 id="viewing-the-existing-briefs"><a class="header" href="#viewing-the-existing-briefs">Viewing the existing briefs</a></h4>
+<pre><code> Upon successful login you will be redirected to the dashboard page, as shown in the image below.
+</code></pre>
 <ul>
-<li><code>PORT</code>: The port number to use for the app's server.</li>
-<li><code>IMBUE_NETWORK_WEBSOCK_ADDR</code>: The address of the Imbue Network websocket endpoint.</li>
-<li><code>RELAY_CHAIN_WEBSOCK_ADDR</code>: The address of the Polkadot websocket endpoint.</li>
-<li><code>DB_HOST</code>: The host address of the database.</li>
-<li><code>DB_PORT</code>: The port number of the database.</li>
-<li><code>DB_USER</code>: The username of the database.</li>
-<li><code>DB_PASSWORD</code>: The password of the database.</li>
-<li><code>DB_NAME</code>: The name of the database.</li>
+<li>Step 1: From the dashboard view you either click into the freelancer view or go the menu and click the discover 
+briefs button, as shown below
+<br/><br/>
+<img src="./images/freelancerView.png" alt="Alt text" width="700" height="400">
+<br/><br/>
+<img src="./images/dashboardMainMenu.png" alt="Alt text" width="700" height="400"></li>
+<li>Step 2: Once you click you can see the list of briefs as shown below
+<br/><br/>
+<img src="./images/discoverBriefs.png" alt="Alt text" width="700" height="400">
+<br/><br/></li>
+<li>Step 3: You can go through all the briefs can also filter through based in certain criteria and 
+click on the search button as shown below to apply the filters
+<br/><br/>
+<img src="./images/briefFiltering.png" alt="Alt text" width="700" height="400">
+<br/><br/></li>
 </ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="ch01-00-app-technical.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="ch01-03-login-flow.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="ch01-02-running-app.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="ch01-00-app-non-technical.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -188,11 +184,11 @@ follow these steps:</p>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="ch01-00-app-technical.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="ch01-03-login-flow.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="ch01-02-running-app.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="ch01-00-app-non-technical.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>

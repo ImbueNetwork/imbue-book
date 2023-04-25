@@ -10,4 +10,5 @@
         - [Installation](ch01-01-installation.md)
         - [Running your app locally](ch01-02-running-app.md)
         - [Login Flow](ch01-03-login-flow.md)
+        - [Brief Flow](ch01-04-brief-flow.md)
       - [Non-Technical](ch01-00-app-non-technical.md)
