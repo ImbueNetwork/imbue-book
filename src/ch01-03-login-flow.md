@@ -27,6 +27,6 @@
    <br/><br/>
      <img src="./images/walletSign.png" alt="Alt text" width="700" height="400">
    <br/><br/>
- - Step 4: Upon signup you will be redirected to the dashboard page, as shown in the image below.
+ - Step 4: Upon successful signin, you will be redirected to the dashboard page, as shown in the image below.
           <img src="./images/dashboard.png" alt="Alt text" width="700" height="400">
    <br/><br/>
