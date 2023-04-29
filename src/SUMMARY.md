@@ -11,4 +11,5 @@
         - [Running app locally](ch01-02-running-app.md)
         - [Login Flow](ch01-03-login-flow.md)
         - [Brief Flow](ch01-04-brief-flow.md)
+        - [Freelancer Flow](ch01-05-freelancer-flow.md)
       - [Non-Technical](ch01-00-app-non-technical.md)
