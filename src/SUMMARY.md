@@ -12,4 +12,5 @@
         - [Login Flow](ch01-03-login-flow.md)
         - [Brief Flow](ch01-04-brief-flow.md)
         - [Freelancer Flow](ch01-05-freelancer-flow.md)
+        - [Submitting Proposal Flow](ch01-05-submit-proposal-flow.md)
       - [Non-Technical](ch01-00-app-non-technical.md)
